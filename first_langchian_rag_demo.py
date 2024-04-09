@@ -4,10 +4,10 @@ from langchain.document_loaders import PyPDFLoader
 # Load PDF
 loaders = [
     # Duplicate documents on purpose - messy data
-    PyPDFLoader("C:/Users/YANGX224/LangChain/普通感冒01.pdf"),
-    PyPDFLoader("C:/Users/YANGX224/LangChain/普通感冒02.pdf"),
-    PyPDFLoader("C:/Users/YANGX224/LangChain/普通感冒03.pdf"),
-    PyPDFLoader("C:/Users/YANGX224/LangChain/普通感冒04.pdf")
+    PyPDFLoader("C:/Users/ABC/LangChain/普通感冒01.pdf"),
+    PyPDFLoader("C:/Users/ABC/LangChain/普通感冒02.pdf"),
+    PyPDFLoader("C:/Users/ABC/LangChain/普通感冒03.pdf"),
+    PyPDFLoader("C:/Users/ABC/LangChain/普通感冒04.pdf")
 ]
 docs = []
 for loader in loaders:
@@ -31,7 +31,7 @@ embed = QianfanEmbeddingsEndpoint(
     qianfan_sk='eJGa26RDw7MKn2TsLWiVW3d84wpiE3vp'
 )
  
-persist_directory = 'C:/Users/YANGX224/LangChain/docs/chroma/'
+persist_directory = 'C:/Users/ABC/LangChain/docs/chroma/'
  
 # Create the vector store
 vectordb = Chroma.from_documents(
